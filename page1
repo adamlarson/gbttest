@@ -1,0 +1,521 @@
+
+<!-- HERO -->
+<domo-section class="bg-color-neutral-200 padding-top pad-bottom">
+
+	<row class="align-center justify-center gutters pad-bottom border-bot">
+
+        <column class="col-sm-10 col-md-9 text-center">
+            <div class="text-headline-6-dark">Domo Data Experience Platform</div>
+            <h1 class="text-headline-1-dark pt-1">The cloud-native platform that's all about speed, ease, and security.</h1>
+            <p class="text-body-lg-dark buff-bottom pt-4" style="margin:0 auto; max-width:750px">With dashboards and apps that go from easy self-service to custom pro-code options, Domo delivers intuitive experiences underpinned by data science and a secure data foundation. It connects with your existing cloud and legacy systems so you can put all your data to work for everyone.</p>
+
+			<button-base
+				v-if="!$browser.isMobile"
+				href="@localize_url('/start/free')"
+				theme="primary">
+			{!! trans('links.try-free') !!}
+			</button-base>
+
+			<button-base
+				v-else
+				href="@localize_url('/form/watch-demo')"
+				theme="primary">
+			{!! trans('links.request_demo') !!}
+			</button-base>
+        </column>
+    </row>
+    <trust-indicator
+        class="pt-4"
+        hide-intro
+        logos='[
+            "https://web-assets.domo.com/miyagi/images/customer/emerson-com-res/logo/logo-customer-emerson-color.svg",
+            "https://web-assets.domo.com/miyagi/images/customer/ebay/logo/logo-customer-ebay-color.svg",
+            "https://web-assets.domo.com/miyagi/images/customer/life-time-fitness/logo/logo-customer-life-time-fitness-life-time-fitness-color.svg",
+            "https://web-assets.domo.com/miyagi/images/customer/idg-communications/logo/customer-logo-idg-color.svg",
+            "https://web-assets.domo.com/miyagi/images/customer/espn/logo/customer-logo-espn-color.svg",
+            "https://web-assets.domo.com/miyagi/images/customer/danaher/logo/logo-customer-danaher-color.svg"
+        ]'>
+    </trust-indicator>
+</domo-section>
+
+<!-- DOMO BUSINESS CLOUD SECTION -->
+<domo-section class="bg-color-neutral-900 padding-top pad-sides">
+    @include('_partials.diagrams.platform-architecture-diagram')
+    <div class="padding-top text-center visible-md">
+        <h3 class="text-headline-6-light pb-3">Connect to over 1,000+ <a href="/data-integration/data-sources" class="btn-link">data sources</a></h3>
+    </div>
+    <div class="bg-color-neutral-700 connectpod visible-md">
+        <row class="col-md-6">
+            <column><img style="max-height:40px;" src="https://web-assets.domo.com/miyagi/images/logo/partner/white/logo-partner-amazon-web-services-white.svg" /></column>
+            <column><img style="max-height:20px;" src="https://web-assets.domo.com/miyagi/images/logo/connector/white/logo-connector-snowflake-white.svg" /></column>
+            <column><img style="max-height:20px;" src="https://web-assets.domo.com/miyagi/images/logo/connector/white/logo-connector-google-analytics-white.svg" /></column>
+            <column><img style="max-height:40px;" src="https://web-assets.domo.com/miyagi/images/logo/connector/white/logo-connector-mongodb-white.svg" /></column>
+            <column><img style="max-height:40px;" src="https://web-assets.domo.com/miyagi/images/logo/connector/white/logo-connector-mariadb-white.svg" /></column>
+            <column><img style="max-height:20px;" src="https://web-assets.domo.com/miyagi/images/logo/connector/white/logo-connector-oracle-white.svg" /></column>
+        </row>
+        <row class="col-md-6 pt-4">
+            <column><img style="max-height:20px;" src="https://web-assets.domo.com/miyagi/images/logo/connector/white/logo-connector-adobe-analytics-new-white.svg" /></column> 
+            <column><img style="max-height:20px;" src="https://web-assets.domo.com/miyagi/images/logo/connector/white/logo-connector-microsoft-azure-white.svg" /></column>
+            <column><img style="max-height:20px;" src="https://web-assets.domo.com/miyagi/images/logo/connector/white/logo-connector-teradata-white.svg" /></column>
+            <column><img style="max-height:20px;" src="https://web-assets.domo.com/miyagi/images/logo/connector/white/logo-connector-dremio-white.svg" /></column>
+            <column><img style="max-height:40px;" src="https://web-assets.domo.com/miyagi/images/logo/connector/white/logo-connector-salesforce-white.svg" /></column>
+            <column><img style="max-height:40px;" src="https://web-assets.domo.com/miyagi/images/logo/connector/white/logo-connector-excel-white.svg" /></column>
+        </row>
+    </div>
+    <div
+        class="padding-top hidden-md">
+    </div>
+</domo-section>
+
+<!-- DOMO EXPERIENCE PLATFORM -->
+<domo-section class="bg-color-shade-white-100 padding-top pad-bottom pad-sides">
+    <h2 class="text-headline-2-dark text-center pad-bottom">Put data to work for everyone with <br />the Domo data experience platform.</h2>
+    
+    <row class="reverse gutters no-gutter-bottom justify-center pad-top pad-bottom">
+        <column class="col-sm-10 col-md-5">
+            <image-pod
+				src="https://web-assets.domo.com/miyagi/images/product/product-feature-integration-data-sources-connectors-2x.png"
+				loading="lazy"
+				alt-text="dashboards reporting">
+			</image-pod>
+        </column>
+        <column class="col-sm-10 col-md-6">
+            <h3 class="text-headline-4-dark">Connect your clouds, lakes, and warehouses.</h3>
+            <p class="text-body-lg-dark">Connect Google, AWS, Snowflake, BigQuery, Redshift, SQL, and any on-premise or proprietary data source.</p>
+
+			<button-base
+				href="@localize_url('/data-integration')"
+				theme="secondary">
+				EXPLORE DATA INTEGRATION
+			</button-base>
+        </column>
+    </row>
+
+    <row class="pad-sides text-center padding-bottom pad-top">
+		<column class="col-sm-12">
+            <image-pod
+                class="pad-bottom pad-top"
+                img-style="max-width:120px;"
+                src="https://web-assets.domo.com/miyagi/images/customer/dal-tile-corporation/logo/logo-customer-dal-tile-corporation-color.svg"
+                loading="lazy"
+                alt-text="dashboards reporting">
+            </image-pod>
+            <div style="max-width:750px; margin:0 auto;">
+                <p class="text-headline-6-dark">“The thing I love about Domo is that it doesn’t care where the data comes from, you just pipe it in and then use it however you want.”</p>
+                <div>
+                <image-pod
+                    img-style="border-radius:25px; padding-bottom:4px; max-width:40px;"
+                    src="https://web-assets.domo.com/miyagi/images/customer/dal-tile-corporation/avatar/avatar-customer-dal-tile-josh-stan.jpg"
+                    loading="lazy">
+                </image-pod>
+                <h4 class="text-body-md-bold-dark">Josh Stan</h4>
+                <h4 class="text-body-md-dark">Director of Corporate Development & Reporting, Dal-Tile</h4>
+            </div>
+            </div>
+        </column>
+    </row>
+
+    <row class="gutters no-gutter-bottom justify-center padding">
+        <column class="col-sm-10 col-md-5">
+            <image-pod
+				src="https://web-assets.domo.com/miyagi/images/product/product-feature-dashboard-avatar-contact-sales-small-2x.png"
+				loading="lazy"
+				alt-text="dashboards reporting">
+			</image-pod>
+        </column>
+        <column class="col-sm-10 col-md-6">
+            <h3 class="text-headline-4-dark">Scale data usage across and between departments.</h3>
+            <p class="text-body-lg-dark">Create one source of data truth and empower users to create their own drag-and-drop charts and dashboards.</p>
+
+			<button-base
+				href="@localize_url('/business-intelligence/visualizations-and-dashboards')"
+				theme="secondary">
+				LEARN ABOUT DATA VISUALIZATION
+			</button-base>
+        </column>
+    </row>
+
+    <row class="reverse gutters no-gutter-bottom justify-center padding-top pad-bottom">
+        <column class="col-sm-10 col-md-5">
+            <image-pod
+				src="https://web-assets.domo.com/miyagi/images/product/product-feature-reporting-spend-budget-alert-projected-lifestyle-2x.png"
+				loading="lazy"
+				alt-text="dashboards reporting">
+			</image-pod>
+        </column>
+        <column class="col-sm-10 col-md-6">
+            <h3 class="text-headline-4-dark">Simplify reporting with self-serve analytics.</h3>
+            <p class="text-body-lg-dark">Make it simple for users to create their own reports in Domo and even set up data alerts.</p>
+
+			<button-base
+				href="@localize_url('/business-intelligence/reporting-and-analytics')"
+				theme="secondary">
+				EXPLORE REPORTING 
+			</button-base>
+        </column>
+    </row>
+
+    <row class="pad-sides text-center padding-bottom pad-top">
+		<column class="col-sm-12">
+            <image-pod
+                class="pad-bottom pad-top"
+                img-style="max-width:251px;"
+                src="https://web-assets.domo.com/miyagi/images/customer/cozy-earth/logo/logo-customer-cozy-earth-color.svg"
+                loading="lazy"
+                alt-text="dashboards reporting">
+            </image-pod>
+            <div style="max-width:750px; margin:0 auto;">
+                <p class="text-headline-6-dark">“This data helps us sell to customers better, get in touch with them better, and really learn from them so we can boost our customer lifetime value.”</p>
+                <div>
+                    <image-pod
+                        img-style="border-radius:25px; padding-bottom:4px; max-width:40px;"
+                        src="https://web-assets.domo.com/miyagi/images/customer/cozy-earth/avatar/avatar-customer-cozy-earth-katie-russell.png"
+                        loading="lazy">
+                    </image-pod>
+                    <h4 class="text-body-md-bold-dark">Katie Russell</h4>
+                    <h4 class="text-body-md-dark">Digital Marketing Coordinator, Cozy Earth</h4>
+                </div>
+            </div>
+        </column>
+    </row>
+
+    <row class="gutters no-gutter-bottom justify-center padding-top pad-bottom">
+        <column class="col-sm-10 col-md-5">
+            <image-pod
+				src="https://web-assets.domo.com/miyagi/images/product/product-feature-app-studio-beta-drag-and-drop-2x.png"
+				loading="lazy"
+				alt-text="dashboards reporting">
+			</image-pod>
+        </column>
+        <column class="col-sm-10 col-md-6">
+            <h3 class="text-headline-4-dark">Leverage data in new apps, processes, and products.</h3>
+            <p class="text-body-lg-dark">Democratize low-code app creation tools to make it easier to incorporate data into day-to-day workflows.</p>
+
+			<button-base
+				href="@localize_url('/intelligent-apps')"
+				theme="secondary">
+				LEARN ABOUT BUSINESS APPS 
+			</button-base>
+        </column>
+    </row>
+
+    <row class="pad-sides text-center padding-bottom pad-top">
+		<column class="col-sm-12">
+            <image-pod
+                class="pad-bottom pad-top"
+                img-style="max-width:185px;"
+                src="https://web-assets.domo.com/miyagi/images/customer/theraskin/logo/logo-customer-theraskin-color.png"
+                loading="lazy"
+                alt-text="dashboards reporting">
+            </image-pod>
+            <div style="max-width:750px; margin:0 auto;">
+                <p class="text-headline-6-dark">“Domo lets us unify information from different sources in a single place in an agile, secure, and reliable way.”</p>
+                <div>
+                <image-pod
+                    img-style="border-radius:25px; padding-bottom:4px; max-width:40px;"
+                    src="https://web-assets.domo.com/miyagi/images/customer/theraskin/avatar/avatar-customer-theraskin-daniel-scherer.png"
+                    loading="lazy">
+                </image-pod>
+                <h4 class="text-body-md-bold-dark">Daniel Scherer</h4>
+                <h4 class="text-body-md-dark">Head of Demand, Theraskin</h4>
+            </div>
+            </div>
+        </column>
+    </row>
+
+    <row class="reverse gutters no-gutter-bottom justify-center padding">
+        <column class="col-sm-10 col-md-5">
+            <image-pod
+				src="https://web-assets.domo.com/miyagi/images/product/product-feature-governance-sandox-pdp-departments-lifestyle-2x.png"
+				loading="lazy"
+				alt-text="dashboards reporting">
+			</image-pod>
+        </column>
+        <column class="col-sm-10 col-md-6">
+            <h3 class="text-headline-4-dark">Simplify governance across all users & environments.</h3>
+            <p class="text-body-lg-dark">Secure data across all environments with user permissions, monitoring, and built-in certification workflows.</p>
+
+			<button-base
+				href="@localize_url('/platform/governance')"
+				theme="secondary">
+				EXPLORE GOVERNANCE
+			</button-base>
+        </column>
+    </row>
+   
+    <row class="gutters no-gutter-bottom justify-center padding-top pad-bottom">
+        <column class="col-sm-10 col-md-5">
+            <image-pod
+				src="https://web-assets.domo.com/miyagi/images/product/product-feature-card-forecast-filter-view-card-lifestyle-2x.png"
+				loading="lazy"
+				alt-text="dashboards reporting">
+			</image-pod>
+        </column>
+        <column class="col-sm-10 col-md-6">
+            <h3 class="text-headline-4-dark">Incorporate data science and machine learning.</h3>
+            <p class="text-body-lg-dark">Build automated models that can highlight relevant data for data scientists and surface insights to business users.</p>
+
+			<button-base
+				href="@localize_url('/business-intelligence/data-science')"
+				theme="secondary">
+				LEARN ABOUT DATA SCIENCE
+			</button-base>
+        </column>
+    </row>
+
+    <row class="pad-sides text-center padding-bottom pad-top">
+		<column class="col-sm-12">
+            <image-pod
+                class="pad-bottom pad-top"
+                img-style="max-width:75px;"
+                src="https://web-assets.domo.com/miyagi/images/customer/nba/logo/logo-customer-nba-2-color.svg"
+                loading="lazy"
+                alt-text="dashboards reporting">
+            </image-pod>
+            <div style="max-width:750px; margin:0 auto;">
+                <p class="text-headline-6-dark">“We partnered with Domo as a data science solution to make us smarter about our estimation process with automation and improved speed.”</p>
+                <div>
+                <image-pod
+                    img-style="border-radius:25px; padding-bottom:4px; max-width:40px;"
+                    src="https://web-assets.domo.com/miyagi/images/customer/nba/avatar/avatar-customer-nba-jonathan-berkowsky.png"
+                    loading="lazy">
+                </image-pod>
+                <h4 class="text-body-md-bold-dark">Jonathan Berkowsky</h4>
+                <h4 class="text-body-md-dark">Senior Manager of Global Media Insights, NBA</h4>
+            </div>
+            </div>
+        </column>
+    </row>
+</domo-section>
+
+<!-- GOVERNANCE -->
+<domo-section
+    class="padding pad-sides bg-color-neutral-900">
+
+    <div
+        class="text-center">
+        <h2
+            class="text-headline-4-light pb-4"
+            style="max-width: 650px; margin:0 auto;">
+            Empower teams while still maintaining governance and control.
+        </h2>
+        <button-base
+				href="@localize_url('/platform/governance')"
+				theme="tertiary"
+				is-on-dark>
+				LEARN MORE
+		</button-base>
+    </div>
+
+    <div
+        class="flex-md-5 buffer-top">
+        <div class="Card">
+            <div
+                class="__icon"
+                style="background-image: url('https://web-assets.domo.com/miyagi/images/icon/domo-icon/domo-icon-product-pdp-shield-person-white.svg')">
+            </div>
+            <p
+                class="__paragraph text-body-md-bold-light">
+                Add security down to the row level with Personalized Data Permissions.
+            </p>
+        </div>
+
+        <div class="Card">
+            <div
+                class="__icon"
+                style="background-image: url('https://web-assets.domo.com/miyagi/images/icon/domo-icon/domo-icon-product-key-white.svg')">
+            </div>
+            <p
+                class="__paragraph text-body-md-bold-light">
+                2FA, SSO integration, event logging, and BYOK encryption.
+            </p>
+        </div>
+
+        <div class="Card">
+            <div
+                class="__icon"
+                style="background-image: url('https://web-assets.domo.com/miyagi/images/icon/domo-icon/domo-icon-product-lineage-white.svg')">
+            </div>
+            <p
+                class="__paragraph text-body-md-bold-light">
+                View data lineage and perform data impact analysis.
+            </p>
+        </div>
+
+        <div class="Card">
+            <div
+                class="__icon"
+                style="background-image: url('https://web-assets.domo.com/miyagi/images/icon/domo-icon/domo-icon-product-certified-general-check-star-white.svg')">
+            </div>
+            <p
+                class="__paragraph text-body-md-bold-light">
+                Ensure quality data with Content Certification.
+            </p>
+        </div>
+
+        <div class="Card">
+            <div
+                class="__icon"
+                style="background-image: url('https://web-assets.domo.com/miyagi/images/icon/domo-icon/domo-icon-product-person-plus-white.svg')">
+            </div>
+            <p
+                class="__paragraph text-body-md-bold-light">
+                Automatic back-end scaling to billions of records and thousands of users.
+            </p>
+        </div>
+    </div>
+</domo-section>
+
+
+<!-- AMBITIONS -->
+<domo-section
+    class="bg-color-neutral-100 padding pad-sides whitecards">
+    <h2
+        class="text-headline-4-dark text-center pad-bottom"
+        style="max-width: 700px; margin:0 auto;">
+        Explore the possibilities with Domo.
+    </h2>
+
+    <div
+        class="flex-md-3 pad-top">
+        <a
+            class="Card"
+            href="@localize_url('/data-integration/data-science')">
+            <div
+                class="__icon"
+                style="background-image: url('https://web-assets.domo.com/miyagi/images/icon/domo-icon/domo-icon-product-lightbulb-black.svg');">
+            </div>
+
+            <div
+                class="__title">
+                Data Science & Machine Learning
+            </div>
+
+            <p
+                class="__paragraph">
+                Put the power of data science into production for data scientists and business users.
+            </p>
+        </a>
+
+        <a
+            class="Card"
+            href="@localize_url('/business-intelligence/data-science')">
+            <div
+                class="__icon"
+                style="background-image: url('https://web-assets.domo.com/miyagi/images/icon/domo-icon/domo-icon-product-forecast-bar-chart-diagonal-arrow-black.svg');">
+            </div>
+
+            <div
+                class="__title">
+                Predictive Analytics
+            </div>
+
+            <p
+                class="__paragraph">
+                Grow your data science practice and make predictive forecasting more viable with Domo’s custom toolset.
+            </p>
+        </a>
+
+        <a
+            class="Card"
+            href="@localize_url('/embedded-analytics')">
+            <div
+                class="__icon"
+                style="background-image: url('https://web-assets.domo.com/miyagi/images/icon/domo-icon/domo-icon-product-webpage-internet-globe-black.svg');">
+            </div>
+
+            <div
+                class="__title">
+                Embedded Analytics
+            </div>
+
+            <p
+                class="__paragraph">
+                Share data and insights with customers and partners to work more collaboratively.
+            </p>
+        </a>
+
+        <a
+            class="Card"
+            href="@localize_url('/business-intelligence/reporting-and-analytics')">
+            <div
+                class="__icon"
+                style="background-image: url('https://web-assets.domo.com/miyagi/images/icon/domo-icon/domo-icon-product-chart-pie-black.svg');">
+            </div>
+
+            <div
+                class="__title">
+                Reporting & Self-service Analytics
+            </div>
+
+            <p
+                class="__paragraph">
+                Modernize your reporting with real-time data that teams can access without waiting for IT.
+            </p>
+        </a>
+
+        <a
+            class="Card"
+            href="@localize_url('/business-intelligence/visualizations-and-dashboards')">
+            <div
+                class="__icon"
+                style="background-image: url('https://web-assets.domo.com/miyagi/images/icon/domo-icon/domo-icon-product-touch-up-black.svg');">
+            </div>
+
+            <div
+                class="__title">
+                Visualizations & Dashboards
+            </div>
+
+            <p
+                class="__paragraph">
+                Create interactive dashboards that enable people to find insights.
+            </p>
+        </a>
+
+        <a
+            class="Card"
+            href="@localize_url('/intelligent-apps')">
+            <div
+                class="__icon"
+                style="background-image: url('https://web-assets.domo.com/miyagi/images/icon/domo-icon/domo-icon-product-appstore-black.svg');">
+            </div>
+
+            <div
+                class="__title">
+                Business Apps
+            </div>
+
+            <p
+                class="__paragraph">
+                Create low- or pro-code apps that help address and automate specific business workflows.
+            </p>
+        </a>
+    </div>
+</domo-section>
+
+
+<!-- CTA -->
+<domo-section class="bg-color-primary-600 padding-bottom">
+    <div class="content-container padding-top">
+        <row class="align-center gutters no-gutter-bottom">
+            <column>
+                <div class="content-max text-center">
+                    <h2 class="text-headline-2-light text-center pad-bottom">Find out how you can put data to work for everyone to fuel curiosity, insight, and smart action.</h2>
+                    <button-base
+				href="@localize_url('/start/free')"
+				theme="primary">
+			{!! trans('links.try-free') !!}
+			</button-base>
+
+			<button-base
+                is-on-dark
+				href="@localize_url('/form/watch-demo')"
+				theme="tertiary">
+			WATCH DEMO
+			</button-base>
+                </div>
+            </column>
+        </row>
+    </div>
+</domo-section>
